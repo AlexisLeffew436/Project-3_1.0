@@ -10,7 +10,7 @@
    Filename: mw_layout.css
    Supporting Files: none
 
-*/
+/*body styles*/
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
@@ -29,17 +29,70 @@ nav ul {
   list-style-type: none;
 }
 
-nav li a {
-  color: #FFFFFF, rgba(255, 255 ,255, 1);
+nav ul li a {
+  color: rgba(255, 255 ,255, 0.5);
+  color: #FFFFFF;
   text-decoration: none;
 }
 
-nav li:hover {
-  background-color: rgb(131, 121, 36);
+nav ul li:hover {
   list-style-image: url(wheelmarker.png);
 }
 
-nav ul a:hover {
+nav ul li a:hover {
+  background-color: rgb(131, 121, 36);
   color: yellow;
-  color: rgb(255, 255 ,255);
+  color: rgba(255, 255 ,255, 1);
+}
+
+#leftsection > p {
+  font-size: 22px;
+}
+
+#firstpar:first-line {
+  text-transform: uppercase;
+}
+
+blockquote {
+  background-color: rgb(131, 121, 36);
+  color: white;
+  font-size: 16px;
+  font-family: Comic Sans MS, Times, cursive;
+}
+
+blockquote p {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote p:before {
+    content: open-quote;
+}
+
+blockquote p:after {
+    content: close-quote;
+}
+
+#rightsection h1 {
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#rightsection h2 {
+  font-size: 18px;
+  text-align: right;
+  font-weight: normal;
+}
+
+#rightsection p {
+  color: gray;
+  font-size: 14px;
+  text-align: justify;
+}
+
+footer address {
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
 }
